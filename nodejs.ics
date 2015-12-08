@@ -1,0 +1,106 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//lanyrd.com//Lanyrd//EN
+X-ORIGINAL-URL:http://lanyrd.com/topics/nodejs/nodejs.ics
+X-WR-CALNAME;CHARSET=utf-8:Node.js conferences
+METHOD:PUBLISH
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+SUMMARY;CHARSET=utf-8:NearForm's Building Production Node.js Systems
+LOCATION;CHARSET=utf-8:New York\, United States
+URL:http://lanyrd.com/2015/skillsmatter-6-december/
+UID:695b4caca67aee1671db86151ab611f916ee99af
+DESCRIPTION:Want to expand your JavaScript skills and learn how to develop reliable\, scalable Node.js systems? Join David Mark Clements for this highly practical\, intensive 2-day course!\n\nhttp://lanyrd.com/cchhzx
+DTSTART;VALUE=DATE:20151207
+DTEND;VALUE=DATE:20151209
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;CHARSET=utf-8:NearForm's Building Mobile Apps with Node.js Clouds
+LOCATION;CHARSET=utf-8:New York\, United States
+URL:http://lanyrd.com/2015/skillsmatter-3-december/
+UID:bd42c7ab24c7ccd52d53c3fe257f4bce32a83752
+DESCRIPTION:Join this 2-day course and learn to create reliable\, enterprise-grade mobile apps using Node.js\n\nhttp://lanyrd.com/cchhqg
+DTSTART;VALUE=DATE:20151209
+DTEND;VALUE=DATE:20151211
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;CHARSET=utf-8:GreeceJS #11
+LOCATION;CHARSET=utf-8:Innovathens\, Pireos 100\, Athens\, 11854
+URL:http://lanyrd.com/2015/greecejs-11/
+UID:a38d528dc788728e432ff6efa948984dd9a44833
+DESCRIPTION:A bi-monthly celebration and exploration of the JavaScript programming language.\n\nhttp://lanyrd.com/cfxyrc
+DTSTART:20151215T160000Z
+DTEND:20151215T190000Z
+GEO:37.9777565;23.7141039
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;CHARSET=utf-8:NearForm's Building Mobile Apps with Node.js Clouds
+LOCATION;CHARSET=utf-8:The Skills Matter eXchange\, 116-120 Goswell Road\, London\, EC1V 7DP
+URL:http://lanyrd.com/2015/skillsmatter-4-december/
+UID:232fa658990a453d3cef75298729a42719bdfafa
+DESCRIPTION:Join this 2-day course and learn to create reliable\, enterprise-grade mobile apps using Node.js\n\nhttp://lanyrd.com/cchhqh
+DTSTART;VALUE=DATE:20151216
+DTEND;VALUE=DATE:20151218
+GEO:51.5246791533;-0.099152612381
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;CHARSET=utf-8:A Day of REST
+LOCATION;CHARSET=utf-8:Conway Hall\, 25 Red Lion Square\, London\, WC1R 4RL
+URL:http://lanyrd.com/2016/feelingrestful/
+UID:0450da339698e868ca2519b4fdc06cdd1d6db0f8
+DESCRIPTION:Learn about the WordPress REST API\, from the people who built it and the people using it.\n\nhttp://lanyrd.com/cfwgtm
+DTSTART:20160128T080000Z
+DTEND:20160128T170000Z
+GEO:51.5197080341;-0.118312118648
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;CHARSET=utf-8:ConFoo 2016
+LOCATION;CHARSET=utf-8:Hotel Bonaventure Montreal\, 900 de La Gauchetiere W.\, Montreal\, Quebec\, Canada\, H5A 1E4\, H5A 1E4
+URL:http://lanyrd.com/2016/confoo/
+UID:db58860310a3bccec5b9976993d83625d5feda17
+DESCRIPTION:http://lanyrd.com/cfhygx
+DTSTART;VALUE=DATE:20160222
+DTEND;VALUE=DATE:20160227
+GEO:45.4992985;-73.5658033
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;CHARSET=utf-8:O'Reilly Fluent Conference 2016
+LOCATION;CHARSET=utf-8:San Francisco Marriott Marquis\, 780 Mission Street\, San Francisco\, CA\, 94103
+URL:http://lanyrd.com/2016/fluentconf/
+UID:63eab17ff05b589b7c535681731e0e3b741fea1e
+DESCRIPTION:The Web Platform in Practice\n\nhttp://lanyrd.com/cfkdym
+DTSTART;VALUE=DATE:20160308
+DTEND;VALUE=DATE:20160311
+GEO:37.7850277;-122.4040455
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;CHARSET=utf-8:Workshop: Rapid API development with Node.js and LoopBack
+LOCATION;CHARSET=utf-8:Said Business School\, Park End St\, OX1 5NZ
+URL:http://lanyrd.com/2016/workshop-rapid-api-development-with-nodejs-and-l-2/
+UID:afef75d5545b693cb8557de2bd04ae03e964f50a
+DESCRIPTION:Practical workshop the day before Render conference\n\nhttp://lanyrd.com/cfxxbd
+DTSTART;VALUE=DATE:20160420
+DTEND;VALUE=DATE:20160421
+GEO:51.7528729004;-1.2663112
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;CHARSET=utf-8:jsDay 2016
+LOCATION;CHARSET=utf-8:Hotel San Marco\, Via Longhena 42\, 37138 Verona\, Italy
+URL:http://lanyrd.com/2016/jsday/
+UID:e535686bae1ee8460ee8de0757b6b1fe8e45e3da
+DESCRIPTION:the international conference on Javascript in Italy\n\nhttp://lanyrd.com/cfwbgp
+DTSTART;VALUE=DATE:20160511
+DTEND;VALUE=DATE:20160513
+GEO:45.4399260212;10.9720798314
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;CHARSET=utf-8:O'Reilly Fluent Conference 2016 in Amsterdam
+LOCATION;CHARSET=utf-8:Amsterdam RAI\, Europaplein 22\, NL 1078 GZ
+URL:http://lanyrd.com/2016/oreilly-fluent-conference/
+UID:75db142691785cccd0fb8f086592ca8a5c69ee2e
+DESCRIPTION:The Web Platform in Practice\n\nhttp://lanyrd.com/cftkhx
+DTSTART;VALUE=DATE:20161109
+DTEND;VALUE=DATE:20161112
+GEO:52.3410094;4.8896751
+END:VEVENT
+END:VCALENDAR

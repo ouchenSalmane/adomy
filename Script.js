@@ -15,6 +15,7 @@
     var csv = require('csv');
     var promise = require("bluebird");
     var iCalGen = require("ical-generator");
+    var fs = require('fs');
 
     /* Variables Globales */
 
@@ -29,11 +30,11 @@
     *
     * */
 
-loadFromEDT("adomy-contact.ics");
+loadFromEDT("./test_samples/adomy-contact.ics");
+//console.log( events);
+//console.log(getIntersection("30-11-2015"));
 
-console.log(getIntersection("30-11-2015"));
-
-console.log(getComplementaire("30-11-2015"));
+//console.log(getComplementaire("30-11-2015"));
 
 
 
@@ -44,17 +45,57 @@ console.log(getComplementaire("30-11-2015"));
 
 function iCalFromCSV(filePath)
 {
+  //Renvoie un string en format iCal
+  var eventsCal = [],
+      calendar = iCalGen({name: 'Calendrier obtenu du fichier csv '+filePath}),
+      csvFile = fs.readFileSync(filePath,'utf8'),
+      parserCSV = csv.parse({delimiter: ','});
 
+      parserCSV.on('readable',function(){
+          while(ligne = parserCSV.read()){
+            eventsCal.push(
+              {
+                start:new Date(parseInt(ligne[1])),
+                end: new Date(parseInt(ligne[2])),
+                summary: ligne[3],
+                description: ligne[4]
+              })
+          }
+      });
 
+      parserCSV.write(csvFile);
 
+      parserCSV.end()
+
+      for(var i = 0; i < eventsCal.length; i++){
+        calendar.createEvent(eventsCal[i])
+      }
+    return calendar.toString();
 }
 
-function CSVfromiCal(filePath)
+// Prends le fichier chargé pour le transformer en csv (voir loadFromEDT)
+function CSVfromiCal()
 {
-
-
-
+  //Renvoie une string en format CSV
+  var data = '';
+  stringifier = csv.stringify({delimiter: ','})
+  stringifier.on('readable', function(){
+    while(row = stringifier.read()){
+      data += row;
+    }
+  });
+  for(var i = 0; i < events.length; i++){
+    var tmp = events[i];
+    var summary = (tmp.summary == "") ? "Pas de résumé" : tmp.summary;
+    var desc = (tmp.description == "")? "Pas de description":tmp.description;
+    stringifier.write([tmp.uid,tmp.start,tmp.end,summary,desc]);
+  }
+  stringifier.end();
+  return data;
 }
+
+
+
 
 
 

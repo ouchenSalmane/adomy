@@ -31,7 +31,6 @@
     * */
 
 loadFromEDT("./test_samples/adomy-contact.ics");
-//console.log( events);
 //console.log(getIntersection("30-11-2015"));
 
 //console.log(getComplementaire("30-11-2015"));
@@ -94,6 +93,25 @@ function CSVfromiCal()
   return data;
 }
 
+
+function getTimeIntervention(){
+    //Renvoie un object contenant une propriété intervention (nombre total d'intervention) et une durée total 
+  var duree = 0;
+  for(var i = 0; i < events.length; i++){
+      var eve = events[i];
+      //La durée est en milliseconde
+    duree  += (eve.end - eve.start);
+  }
+  var duration = moment.duration(duree)._data;
+  var hours = duration.hours;
+  var minutes = duration.minutes;
+  //On souhaite avoir le temps total en heure et minutes, on convertit les jours et mois
+  if(duration.days > 0){
+    hours += (duration.days * 24);
+  }
+
+  return {intervention: events.length, tempsTravail: hours+'H'+minutes+'mn(s)' }
+}
 
 
 
